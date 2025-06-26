@@ -1,0 +1,117 @@
+.cabecario{
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+                                        /*Apresentação*/
+
+body {
+    backdrop-filter: blur(5px);
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: -200px; /* escondido inicialmente */
+    width: 200px;
+    height: 100%;
+    background-color: #222;
+    overflow: hidden;
+    transition: left 0.4s ease;
+    z-index: 10;
+}
+
+.menu-lateral.ativo {
+    left: 0; /* mostra o menu */
+}
+
+.menu-lateral a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+    transition: background-color 0.2s;
+}
+
+.menu-lateral a:hover {
+    background-color: #444;
+}
+
+.menu-hover-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    z-index: 5;
+}
+
+.apresentacao {
+    margin-left: 40px;
+    padding: 20px;
+}
+
+.apresentacao img {
+    display: flex;
+    width: 250px;
+    height: 250px;
+}
+
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.active::after {
+    width: 100%;
+}
+
+.skill-bar {
+    height: 8px;
+    border-radius: 4px;
+    background: #e5e7eb;
+}
+
+.skill-progress {
+    height: 100%;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+}
