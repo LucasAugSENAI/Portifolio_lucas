@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas Augusto | Desenvolvedor Full Stack</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/estilo_css.css">
+  <!--- Icones --->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+<!-- Header/Navigation -->
+<header class="fixed w-full bg-white shadow-sm z-50">
+  <div class="menu-hover-area" id="hoverArea"></div>
+
+  <div class="container mx-auto px-6 py-4">
+    <div class="flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold gradient-text">Lucas Augusto</a>
+
+      <div class="hidden md:flex space-x-8 menu-lateral" id="menuLateral">
+        <a href="#home" class="nav-link active">Início</a>
+        <a href="#about" class="nav-link">Sobre</a>
+        <a href="#skills" class="nav-link">Habilidades</a>
+        <a href="#projects" class="nav-link">Projetos</a>
+        <a href="#contact" class="nav-link">Contato</a>
+      </div>
+
+      <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4">
+      <div class="flex flex-col space-y-3">
+        <a href="#home" class="nav-link active">Início</a>
+        <a href="#about" class="nav-link">Sobre</a>
+        <a href="#skills" class="nav-link">Habilidades</a>
+        <a href="#projects" class="nav-link">Projetos</a>
+        <a href="#contact" class="nav-link">Contato</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="pt-32 pb-20 px-6 bg-gradient-to-r from-blue-50 to-purple-50">
+  <div class="container mx-auto flex flex-col md:flex-row items-center">
+    <div class="md:w-1/2 mb-12 md:mb-0">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Olá, eu sou <span class="gradient-text">Lucas Augusto</span></h1>
+      <h2 class="text-2xl md:text-3xl font-semibold mb-6">Desenvolvedor Full Stack</h2>
+      <p class="text-lg text-gray-600 mb-8">Especializado em Python, HTML, CSS e JavaScript. Transformando ideias em soluções digitais eficientes e elegantes.</p>
+      <div class="flex space-x-4">
+        <a href="#contact" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg font-medium hover:shadow-lg transition-all duration-300">Contate-me</a>
+        <a href="#projects" class="px-6 py-3 border border-gray-300 rounded-lg font-medium hover:bg-gray-100 transition-all duration-300">Ver Projetos</a>
+      </div>
+    </div>
+    <div class="md:w-1/2 flex justify-center">
+      <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
+        <img src="static/img/Lucas.jpg" alt="Lucas Augusto" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 px-6 bg-white">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-16 gradient-text">Sobre Mim</h2>
+
+    <div class="flex flex-col md:flex-row items-center">
+      <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+        <div class="w-64 h-64 rounded-lg overflow-hidden shadow-xl">
+          <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Lucas trabalhando" class="w-full h-full object-cover">
+        </div>
+      </div>
+
+      <div class="md:w-2/3 md:pl-12">
+        <h3 class="text-2xl font-semibold mb-4">Desenvolvedor apaixonado por criar soluções inovadoras</h3>
+        <p class="text-gray-600 mb-6">Com mais de 5 anos de experiência no desenvolvimento web, tenho trabalhado em diversos projetos que vão desde simples websites até complexas aplicações web. Minha paixão por programação começou quando eu tinha 15 anos e desde então venho me especializando em diversas tecnologias.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div class="flex items-start">
+            <div class="bg-blue-100 p-3 rounded-full mr-4">
+              <i class="fas fa-code text-blue-600"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-1">Desenvolvimento Web</h4>
+              <p class="text-gray-600 text-sm">Criação de websites e aplicações web responsivas e modernas.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <div class="bg-purple-100 p-3 rounded-full mr-4">
+              <i class="fas fa-server text-purple-600"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-1">Backend Development</h4>
+              <p class="text-gray-600 text-sm">Construção de APIs robustas e sistemas backend eficientes.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <div class="bg-green-100 p-3 rounded-full mr-4">
+              <i class="fas fa-mobile-alt text-green-600"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-1">Responsive Design</h4>
+              <p class="text-gray-600 text-sm">Designs que se adaptam perfeitamente a qualquer dispositivo.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <div class="bg-yellow-100 p-3 rounded-full mr-4">
+              <i class="fas fa-rocket text-yellow-600"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-1">Performance Optimization</h4>
+              <p class="text-gray-600 text-sm">Aplicações otimizadas para máxima velocidade e eficiência.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="inline-flex items-center text-blue-600 font-medium">
+          Baixar CV <i class="fas fa-download ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-20 px-6 bg-gray-50">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-16 gradient-text">Minhas Habilidades</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div>
+        <h3 class="text-xl font-semibold mb-6">Habilidades Técnicas</h3>
+
+        <div class="space-y-6">
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="font-medium">Python</span>
+              <span class="text-gray-600">90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="font-medium">JavaScript</span>
+              <span class="text-gray-600">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="font-medium">HTML/CSS</span>
+              <span class="text-gray-600">95%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 95%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="font-medium">Django/Flask</span>
+              <span class="text-gray-600">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 80%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold mb-6">Habilidades Profissionais</h3>
+
+        <div class="space-y-6">
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="font-medium">Trabalho em Equipe</span>
+              <span class="text-gray-600">95%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 95%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="font-medium">Comunicação</span>
+              <span class="text-gray-600">90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="font-medium">Resolução de Problemas</span>
+              <span class="text-gray-600">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="font-medium">Gestão de Projetos</span>
+              <span class="text-gray-600">75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-16">
+      <h3 class="text-xl font-semibold mb-8 text-center">Tecnologias que utilizo</h3>
+
+      <div class="flex flex-wrap justify-center gap-8">
+        <div class="flex flex-col items-center">
+          <div class="bg-white p-4 rounded-full shadow-md mb-2">
+            <i class="fab fa-python text-4xl text-blue-600"></i>
+          </div>
+          <span class="text-sm font-medium">Python</span>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div class="bg-white p-4 rounded-full shadow-md mb-2">
+            <i class="fab fa-js text-4xl text-yellow-400"></i>
+          </div>
+          <span class="text-sm font-medium">JavaScript</span>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div class="bg-white p-4 rounded-full shadow-md mb-2">
+            <i class="fab fa-html5 text-4xl text-orange-500"></i>
+          </div>
+          <span class="text-sm font-medium">HTML5</span>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div class="bg-white p-4 rounded-full shadow-md mb-2">
+            <i class="fab fa-css3-alt text-4xl text-blue-500"></i>
+          </div>
+          <span class="text-sm font-medium">CSS3</span>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div class="bg-white p-4 rounded-full shadow-md mb-2">
+            <i class="fab fa-react text-4xl text-blue-400"></i>
+          </div>
+          <span class="text-sm font-medium">React</span>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div class="bg-white p-4 rounded-full shadow-md mb-2">
+            <i class="fab fa-node-js text-4xl text-green-500"></i>
+          </div>
+          <span class="text-sm font-medium">Node.js</span>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div class="bg-white p-4 rounded-full shadow-md mb-2">
+            <i class="fas fa-database text-4xl text-gray-600"></i>
+          </div>
+          <span class="text-sm font-medium">SQL</span>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div class="bg-white p-4 rounded-full shadow-md mb-2">
+            <i class="fab fa-git-alt text-4xl text-orange-600"></i>
+          </div>
+          <span class="text-sm font-medium">Git</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-20 px-6 bg-white">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-16 gradient-text">Meus Projetos</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Project 1 -->
+      <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300">
+        <div class="h-48 overflow-hidden">
+          <img src="static/img/Projeto_BootStrap_InStyle.png" alt="Dashboard Analytics" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="text-xl font-semibold">Loja de Roupas InStyle</h3>
+            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">BootStrap</span>
+          </div>
+          <p class="text-gray-600 mb-4">Loja de roupas feito apenas em HTML, css e BootStrap. Dona: Lara Alves</p>
+          <div class="flex space-x-3">
+            <a href="#" class="text-blue-600 hover:text-blue-800">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a href="#" class="text-gray-600 hover:text-gray-800">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300">
+        <div class="h-48 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1636&q=80" alt="E-commerce Website" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="text-xl font-semibold">Loja Virtual</h3>
+            <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full">JavaScript</span>
+          </div>
+          <p class="text-gray-600 mb-4">Plataforma de e-commerce completa com carrinho de compras e integração de pagamentos.</p>
+          <div class="flex space-x-3">
+            <a href="#" class="text-blue-600 hover:text-blue-800">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a href="#" class="text-gray-600 hover:text-gray-800">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300">
+        <div class="h-48 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Task Manager" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="text-xl font-semibold">Gerenciador de Tarefas</h3>
+            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Full Stack</span>
+          </div>
+          <p class="text-gray-600 mb-4">Aplicação web para gerenciamento de tarefas com autenticação de usuário e notificações.</p>
+          <div class="flex space-x-3">
+            <a href="#" class="text-blue-600 hover:text-blue-800">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a href="#" class="text-gray-600 hover:text-gray-800">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300">
+        <div class="h-48 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="API RESTful" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="text-xl font-semibold">API RESTful</h3>
+            <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full">Python</span>
+          </div>
+          <p class="text-gray-600 mb-4">API robusta construída com Flask para integração entre sistemas e aplicações móveis.</p>
+          <div class="flex space-x-3">
+            <a href="#" class="text-blue-600 hover:text-blue-800">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a href="#" class="text-gray-600 hover:text-gray-800">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300">
+        <div class="h-48 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Portfolio Website" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="text-xl font-semibold">Website de Portfólio</h3>
+            <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full">HTML/CSS</span>
+          </div>
+          <p class="text-gray-600 mb-4">Website de portfólio responsivo com design moderno e animações suaves.</p>
+          <div class="flex space-x-3">
+            <a href="#" class="text-blue-600 hover:text-blue-800">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a href="#" class="text-gray-600 hover:text-gray-800">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300">
+        <div class="h-48 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Chat Application" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="text-xl font-semibold">Aplicativo de Chat</h3>
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded-full">JavaScript</span>
+          </div>
+          <p class="text-gray-600 mb-4">Aplicativo de mensagens em tempo real usando Socket.io e Node.js.</p>
+          <div class="flex space-x-3">
+            <a href="#" class="text-blue-600 hover:text-blue-800">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a href="#" class="text-gray-600 hover:text-gray-800">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="#" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg font-medium hover:shadow-lg transition-all duration-300 inline-flex items-center">
+        Ver mais projetos <i class="fas fa-arrow-right ml-2"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 px-6 bg-gray-50">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-16 gradient-text">Entre em Contato</h2>
+
+    <div class="flex flex-col lg:flex-row gap-12">
+      <div class="lg:w-1/2">
+        <h3 class="text-xl font-semibold mb-6">Vamos trabalhar juntos!</h3>
+        <p class="text-gray-600 mb-8">Estou sempre aberto a novas oportunidades e projetos desafiadores. Se você tem uma ideia ou projeto em mente, ou simplesmente quer bater um papo sobre tecnologia, não hesite em me contatar.</p>
+
+        <div class="space-y-6">
+          <div class="flex items-start">
+            <div class="bg-blue-100 p-3 rounded-full mr-4">
+              <i class="fas fa-envelope text-blue-600"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-1">Email</h4>
+              <p class="text-gray-600">lucas.augusto@aluno.senai.br</p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <div class="bg-purple-100 p-3 rounded-full mr-4">
+              <i class="fas fa-phone-alt text-purple-600"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-1">Telefone</h4>
+              <p class="text-gray-600">+55 (18) 99698-1279</p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <div class="bg-green-100 p-3 rounded-full mr-4">
+              <i class="fas fa-map-marker-alt text-green-600"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-1">Localização</h4>
+              <p class="text-gray-600">São Paulo, Brasil</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8">
+          <h4 class="font-semibold mb-4">Redes Sociais</h4>
+          <div class="flex space-x-4">
+            <a href="#" class="bg-white p-3 rounded-full shadow-md text-blue-600 hover:bg-blue-50 transition-colors duration-300">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="bg-white p-3 rounded-full shadow-md text-gray-800 hover:bg-gray-100 transition-colors duration-300">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="bg-white p-3 rounded-full shadow-md text-blue-400 hover:bg-blue-50 transition-colors duration-300">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="bg-white p-3 rounded-full shadow-md text-pink-600 hover:bg-pink-50 transition-colors duration-300">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:w-1/2">
+        <form class="bg-white p-8 rounded-xl shadow-md">
+          <div class="mb-6">
+            <label for="name" class="block text-gray-700 font-medium mb-2">Nome</label>
+            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Seu nome">
+          </div>
+
+          <div class="mb-6">
+            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="seu@email.com">
+          </div>
+
+          <div class="mb-6">
+            <label for="subject" class="block text-gray-700 font-medium mb-2">Assunto</label>
+            <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Assunto da mensagem">
+          </div>
+
+          <div class="mb-6">
+            <label for="message" class="block text-gray-700 font-medium mb-2">Mensagem</label>
+            <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Sua mensagem"></textarea>
+          </div>
+
+          <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg font-medium hover:shadow-lg transition-all duration-300">
+            Enviar Mensagem
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12 px-6">
+  <div class="container mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-6 md:mb-0">
+        <a href="#" class="text-2xl font-bold gradient-text">Lucas Augusto</a>
+        <p class="text-gray-400 mt-2">Desenvolvedor Full Stack</p>
+      </div>
+
+      <div class="flex flex-col md:flex-row md:space-x-12 space-y-4 md:space-y-0">
+        <div>
+          <h4 class="font-semibold mb-3">Links Rápidos</h4>
+          <ul class="space-y-2">
+            <li><a href="#home" class="text-gray-400 hover:text-white transition-colors duration-300">Início</a></li>
+            <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">Sobre</a></li>
+            <li><a href="#skills" class="text-gray-400 hover:text-white transition-colors duration-300">Habilidades</a></li>
+            <li><a href="#projects" class="text-gray-400 hover:text-white transition-colors duration-300">Projetos</a></li>
+            <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contato</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-3">Serviços</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Desenvolvimento Web</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Aplicações Python</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Design Responsivo</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Consultoria</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-3">Redes Sociais</h4>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+      <p>&copy; 2023 Lucas Augusto. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button id="back-to-top" class="fixed bottom-8 right-8 bg-gradient-to-r from-blue-500 to-purple-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<script src="static/js/estilo_js.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+</body>
+</html>
